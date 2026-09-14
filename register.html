@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — inLaamp</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: #090a1f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .logo span {
+      color: #ff4f9a;
+    }
+
+    .card {
+      background: #11132d;
+      border: 1px solid #292b48;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #aaaec5;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid #343754;
+      background: #0b0d24;
+      color: white;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #ff4f9a;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #8589a5;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 20px 0;
+      font-size: 13px;
+      color: #aaaec5;
+      line-height: 1.5;
+    }
+
+    .checkbox input {
+      width: auto;
+      margin-top: 3px;
+    }
+
+    .button {
+      width: 100%;
+      border: none;
+      padding: 15px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #ff4f9a, #8b5cf6);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .login {
+      text-align: center;
+      margin-top: 22px;
+      color: #aaaec5;
+      font-size: 14px;
+    }
+
+    .login a {
+      color: #ff70aa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #8589a5;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 15px;
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">in<span>Laamp</span></div>
+
+    <div class="card">
+
+      <h1>Create your account</h1>
+
+      <p class="intro">
+        Join inLaamp and start discovering meaningful connections.
+      </p>
+
+      <form>
+
+        <div class="field">
+          <label for="name">First name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your first name"
+            maxlength="30"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="dob">Date of birth</label>
+          <input
+            type="date"
+            id="dob"
+            required
+          >
+          <p class="note">
+            You must be 18 or older to use inLaamp.
+          </p>
+        </div>
+
+        <div class="field">
+          <label for="gender">I am</label>
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option>Man</option>
+            <option>Woman</option>
+            <option>Non-binary</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="looking">Looking for</label>
+          <select id="looking" required>
+            <option value="">Select</option>
+            <option>Men</option>
+            <option>Women</option>
+            <option>Everyone</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="you@example.com"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Create a password"
+            minlength="8"
+            required
+          >
+          <p class="note">
+            Use at least 8 characters.
+          </p>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" required>
+          <span>
+            I confirm that I am 18 or older and agree to
+            the inLaamp Terms and Privacy Policy.
+          </span>
+        </label>
+
+        <button type="submit" class="button">
+          Create Account
+        </button>
+
+      </form>
+
+      <div class="login">
+        Already have an account?
+        <a href="login.html">Log in</a>
+      </div>
+
+      <a href="index.html" class="back">
+        ← Back to inLaamp
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

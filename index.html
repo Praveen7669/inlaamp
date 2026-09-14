@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>inLaamp — Light up your connection</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #090a1f;
+      color: white;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .logo span {
+      color: #ff4f9a;
+    }
+
+    .login {
+      padding: 10px 20px;
+      border: 1px solid #ff4f9a;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      padding: 50px 7%;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #ff4f9a;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.6;
+      color: #c5c6d8;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .primary {
+      background: linear-gradient(135deg, #ff4f9a, #8b5cf6);
+      color: white;
+      padding: 15px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .secondary {
+      border: 1px solid #555875;
+      color: white;
+      padding: 15px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    .phone {
+      width: 280px;
+      height: 520px;
+      border: 8px solid #252640;
+      border-radius: 38px;
+      background: #11132d;
+      padding: 15px;
+      box-shadow: 0 0 50px rgba(255, 79, 154, 0.2);
+    }
+
+    .profile {
+      height: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(160deg, #7c3aed, #ec4899);
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+    }
+
+    .profile-info {
+      width: 100%;
+    }
+
+    .profile-info h2 {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .profile-info p {
+      color: white;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 18px;
+      font-size: 30px;
+    }
+
+    section {
+      padding: 70px 7%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: #aaaec5;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #11132d;
+      border: 1px solid #252640;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #aaaec5;
+      line-height: 1.5;
+    }
+
+    .premium {
+      max-width: 500px;
+      margin: auto;
+      background: linear-gradient(145deg, #171936, #11132d);
+      border: 1px solid #ff4f9a;
+      border-radius: 25px;
+      padding: 40px;
+    }
+
+    .price {
+      font-size: 45px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .price small {
+      font-size: 15px;
+      color: #aaaec5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #777b99;
+      border-top: 1px solid #20223b;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .phone {
+        width: 250px;
+        height: 460px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">in<span>Laamp</span></div>
+    <a href="#" class="login">Login</a>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Light up your <span>connection.</span></h1>
+
+        <p>
+          Meet genuine people, discover new connections,
+          and find someone who lights up your world.
+        </p>
+
+        <div class="buttons">
+          <a href="register.html" class="primary">Create Account</a>
+          <a href="#how" class="secondary">How it works</a>
+        </div>
+      </div>
+
+      <div class="phone">
+        <div class="profile">
+          <div class="profile-info">
+            <h2>Someone Special ✨</h2>
+            <p>Looking for meaningful connections</p>
+
+            <div class="actions">
+              <span>❌</span>
+              <span>❤️</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How inLaamp works</h2>
+      <p class="subtitle">Simple, safe and made for real connections.</p>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">👤</div>
+          <h3>Create your profile</h3>
+          <p>
+            Tell people a little about yourself and
+            add your best photos.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💜</div>
+          <h3>Discover people</h3>
+          <p>
+            Like people you're interested in or
+            pass and continue discovering.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💬</div>
+          <h3>Make a match</h3>
+          <p>
+            When two people like each other,
+            it's a match. Start chatting!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Premium</h2>
+      <p class="subtitle">Get more from your connections.</p>
+
+      <div class="premium">
+        <h3>inLaamp Premium</h3>
+
+        <div class="price">
+          ₹14 <small>/ week</small>
+        </div>
+
+        <p class="subtitle">
+          More likes • See who liked you • Advanced filters
+          • Profile boost • No ads
+        </p>
+
+        <a href="#" class="primary">Get Premium</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 inLaamp — Light up your connection.
+  </footer>
+
+</body>
+</html>
