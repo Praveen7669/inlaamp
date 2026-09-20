@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#e8dff3", "tertiary-fixed": "#acedff", "on-primary": "#490080", "on-tertiary": "#003640", "on-surface": "#e8dff3", "on-error": "#690005", "secondary-container": "#aa0266", "on-secondary": "#640039", "surface-container-highest": "#383241", "outline": "#988d9f", "surface-container-high": "#2d2836", "surface-container": "#221d2c", "surface": "#16111f", "on-surface-variant": "#cfc2d6", "surface-container-low": "#1e1927", "on-primary-fixed": "#2c0051", "on-background": "#e8dff3", "surface-bright": "#3c3746", "background": "#16111f", "tertiary": "#4cd7f6", "primary-fixed": "#f0dbff", "primary": "#ddb7ff", "on-primary-container": "#400071", "surface-tint": "#ddb7ff", "tertiary-container": "#009eb9", "inverse-on-surface": "#332e3d", "error": "#ffb4ab", "surface-variant": "#383241", "inverse-primary": "#842bd2", "surface-dim": "#16111f", "on-tertiary-fixed": "#001f26", "primary-container": "#b76dff", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#ffb0cd", "on-secondary-fixed-variant": "#8c0053", "secondary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#4cd7f6", "surface-container-lowest": "#100c19", "outline-variant": "#4d4354", "on-tertiary-container": "#002f38", "on-tertiary-fixed-variant": "#004e5c", "primary-fixed-dim": "#ddb7ff", "on-secondary-container": "#ffbad3", "error-container": "#93000a", "secondary": "#ffb0cd", "on-primary-fixed-variant": "#6900b3", "on-secondary-fixed": "#3e0022" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Syne"], "headline-md": ["Syne"], "display-md-mobile": ["Syne"], "headline-sm": ["Syne"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Syne"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Syne"], "label-lg": ["Plus Jakarta Sans"], "display-md": ["Syne"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-md-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen relative selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="inLaamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8zEgIpaA8DTTgiY3EbpEB4ybZofb-9EMskbnNanXvawFJhbQNv-q4m6TWp3NgaRgNBjdn9UiRAX7WbK4vMMu2GA99m5C9UFeCh_9jDEobFlcblwTXrL4AZc56WKbZhpFRk9H_3m4cAyr3twW2haN_aGVyvldBLC-kNw8Lcq1BshDUIHClljmyvzFphxd5HqsmGR5vwQnNcIAhVnGlALPDvxjayWCjiKj8qsP2-C0F81aMT-IsV6mSRXiQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">inLaamp</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block tracking-widest uppercase">Light up your connection</span></div></div><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container/60 p-space-xs rounded-full backdrop-blur-md" data-active-classes="bg-surface-container-highest text-primary font-semibold shadow-[0_0_12px_rgba(221,183,255,0.2)]"><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="discover" href="#">Discover</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="matches-likes" href="#">Matches &amp; Likes</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="messages" href="#">Messages</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="premium" href="#">Premium</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="safety-center" href="#">Safety Center</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="my-profile" href="#">My Profile</a></nav><div class="flex items-center gap-space-md shrink-0"><button class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-semibold shadow-[0_0_24px_rgba(236,72,153,0.35)] hover:scale-105 transition-transform duration-200 cursor-pointer" type="button">Find Your Spark</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(221,183,255,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 pb-24 xl:pb-0 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Audio Visualizer & Ambient Keyframes -->
+<style>
+    @keyframes pulse-wave {
+      0%, 100% { height: 4px; opacity: 0.35; }
+      50% { height: 22px; opacity: 1; }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { transform: scale(1); opacity: 0.25; }
+      50% { transform: scale(1.08); opacity: 0.45; }
+    }
+    .wave-bar-1 { animation: pulse-wave 1.1s ease-in-out infinite 0.1s; }
+    .wave-bar-2 { animation: pulse-wave 0.85s ease-in-out infinite 0.25s; }
+    .wave-bar-3 { animation: pulse-wave 1.3s ease-in-out infinite 0.05s; }
+    .wave-bar-4 { animation: pulse-wave 0.7s ease-in-out infinite 0.4s; }
+    .wave-bar-5 { animation: pulse-wave 1.15s ease-in-out infinite 0.2s; }
+    .wave-bar-6 { animation: pulse-wave 0.95s ease-in-out infinite 0.35s; }
+  </style>
+<!-- Ambient Chromatic Backlight Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[520px] h-[520px] rounded-full bg-primary-container/15 blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/3 right-10 w-[420px] h-[420px] rounded-full bg-secondary-container/15 blur-[140px] pointer-events-none"></div>
+<div class="absolute -bottom-20 left-1/3 w-[600px] h-[350px] rounded-full bg-tertiary-container/10 blur-[130px] pointer-events-none"></div>
+<!-- 1. Header Sub-Bar / Context Ribbon (Security & Frequency Telemetry) -->
+<div class="w-full px-gutter pt-space-md pb-space-sm bg-surface-container-lowest/70 backdrop-blur-2xl">
+<div class="max-w-[1720px] mx-auto flex flex-wrap items-center justify-between gap-y-space-sm gap-x-space-md">
+<!-- Left: Frequency & Resonance Telemetry -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-1 rounded-full shadow-inner">
+<span class="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(76,215,246,0.8)] animate-ping"></span>
+<span class="w-2 h-2 -ml-3 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-on-surface">Chamber Frequency:</span>
+<span class="font-headline-sm text-label-md text-tertiary font-bold tracking-tight">432.8 Hz</span>
+<span class="text-outline text-label-sm">• BILATERAL TRANSMISSION</span>
+</div>
+<!-- Security Status Badges -->
+<div class="hidden lg:flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">shield_lock</span>
+              ZK Quantum Encrypted E2E
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary">no_photography</span>
+              Anti-Screenshot Active
+            </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">timer</span>
+              Disappearing Sparks (24h)
+            </span>
+</div>
+</div>
+<!-- Right: Utility Controls & Safety Shield -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">tune</span>
+<span class="hidden sm:inline">Settings</span>
+</button>
+<button class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-colors cursor-pointer" id="audioSyncToggle" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary">graphic_eq</span>
+<span class="hidden sm:inline">Mute Audio Sync</span>
+</button>
+<button class="inline-flex items-center gap-1 px-space-md py-1.5 rounded-full bg-secondary-container/30 hover:bg-secondary-container/50 text-secondary text-label-sm font-label-sm transition-all shadow-[0_0_12px_rgba(255,176,205,0.2)] cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Safety Guardian</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. Main Three-Column Messaging Chamber -->
+<div class="w-full px-gutter py-space-md">
+<div class="max-w-[1720px] mx-auto grid grid-cols-12 gap-space-md items-start">
+<!-- ==================== LEFT COLUMN: ACTIVE FREQUENCIES (3 Cols) ==================== -->
+<aside class="col-span-12 lg:col-span-4 xl:col-span-3 flex flex-col gap-space-md bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-xl">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">sensors</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Active Frequencies</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">5 Online</span>
+</div>
+<!-- Search & Vibe Filter -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full pl-10 pr-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded-full font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container shadow-inner transition-all" placeholder="Search messages or vibes..." type="text"/>
+</div>
+<!-- Vibe Quick Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs -mx-space-xs px-space-xs">
+<button class="shrink-0 px-space-md py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm cursor-pointer shadow-[0_0_10px_rgba(221,183,255,0.2)]" type="button">All Sparks</button>
+<button class="shrink-0 px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors cursor-pointer" type="button">🎧 Audio Sync</button>
+<button class="shrink-0 px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors cursor-pointer" type="button">✨ 95%+ Resonant</button>
+</div>
+<!-- Active Match Threads List -->
+<div class="flex flex-col gap-space-xs max-h-[640px] overflow-y-auto pr-space-xs">
+<!-- Thread 1: Aanya (Active) -->
+<div class="group relative flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container-highest/60 shadow-[0_4px_20px_rgba(183,109,255,0.18)] cursor-pointer transition-all">
+<div class="relative shrink-0">
+<img class="w-13 h-13 rounded-full object-cover shadow-[0_0_16px_rgba(221,183,255,0.5)]" data-alt="Futuristic portrait of Aanya, a creative woman with sleek hair illuminated by ultraviolet neon ambient light in an obsidian dark room, looking intently toward camera with cinematic cyber-luxe style, subtle violet gloss highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg6nGpqqL4OvgKvJl6EAd2APnlPIpcIyH0-1OvJJBqsNmaLzCx3881uTklMfXdoaz2i4VVF3z-yfVJXwhs8GWh6heaKajjO2eMXeO5v1tKKMkwMxo5iIIpANIV9p5CmS0XmCfUSD86hiwX5jpwfbEu7btxeXFBudRJlzUcr6rzCD2mTWxBMcUuLv4MFh2ZuYGEZ1IHVuWIG3CisIGhtWgajEzYNcCvq9aJ4GRpBSuzH8fxWGMtd8XFRQ"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary shadow-[0_0_8px_rgba(76,215,246,0.9)] ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<div class="flex items-center gap-1 min-w-0">
+<span class="font-headline-sm text-body-md text-on-surface font-bold truncate">Aanya, 25</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]" title="Quantum Verified Node">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary shrink-0 font-semibold">2m ago</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-label-sm font-bold shrink-0">98% Resonant</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Debating matcha synths...</span>
+</div>
+</div>
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-container shrink-0 shadow-[0_0_10px_rgba(255,176,205,0.8)]"></div>
+</div>
+<!-- Thread 2: Reya -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container/60 transition-all cursor-pointer">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover opacity-90 group-hover:opacity-100" data-alt="Close-up portrait of Reya in modern cyber lounge, subtle hot-pink rim lighting casting glow on cheekbones, deep violet shadows, ethereal and composed expression, high fashion futuristic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXx3moGLJ6EmWkp5KJMfWG6020zX3NRKLmq2uMxDTp4GZQFu1TOHlwmxeEFke5f-C5xl0o9jXx25PUm9FoaIYkTLqIoPYvvhDVcAXxWIVUje52TpfgNjcEnVAzYguZyoPat7RGJoMnqJISQWmAS4H0hhKcmi4vjmnu8cIdT723O5PDtDj4ah2nOgADyQPSm69kVCMgwNzc7rIY6XtxNVgMkR7lWZQo5oMT9gJre72NA3HBu0nI9_sjgQ"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Reya, 24</span>
+<span class="font-label-sm text-label-sm text-outline shrink-0">1h ago</span>
+</div>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="font-label-sm text-label-sm text-tertiary shrink-0 font-medium">95% Harmonic</span>
+<span class="font-body-sm text-body-sm text-outline truncate">• Loved the ambient track you sent 🎧</span>
+</div>
+</div>
+</div>
+<!-- Thread 3: Mira -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container/60 transition-all cursor-pointer">
+<div class="relative shrink-0">
+<img class="w-12 h-12 rounded-full object-cover opacity-85 hover:opacity-100" data-alt="Artistic profile of Mira with sculptural earrings reflecting electric magenta reflections, warm dark purple skin tones, cinematic depth of field, neon atmospheric background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYe_kkUd0-WAY1QO7-RxmYAxdM9YVLY-xwkEAlQ7IfXI4umg9CT9Eo5cY3lS1_NiHw3HhiRBQ8ILyVHlGlQhLKssqqOn1ITj_uFFDP3E-LbT223mxssneYs6gbNCHkYImQokjufnuewKxnUNE1YSbfGVSZHmmIskKCa65vWw_B8Z8iBVxs6ki3oNhN0n6GQHUGlBpPQpvMpypXbbFYMEXkuYki7JpeylMG-tRZxzFmz-Tmm6qozNVUw"/>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-outline ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Mira, 27</span>
+<span class="font-label-sm text-label-sm text-outline shrink-0">3h ago</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">mic</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Voice transmission [0:34]</span>
+</div>
+</div>
+</div>
+<!-- Thread 4: Kabir -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container/60 transition-all cursor-pointer">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+                  K
+                </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-outline-variant ring-2 ring-surface"></span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Kabir, 27</span>
+<span class="font-label-sm text-label-sm text-outline shrink-0">Yesterday</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline truncate">Initiator Node matched</span>
+</div>
+</div>
+<!-- Thread 5: Rohan -->
+<div class="flex items-center gap-space-md p-space-sm rounded-lg hover:bg-surface-container/60 transition-all cursor-pointer">
+<div class="relative shrink-0">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-tertiary font-headline-sm text-headline-sm">
+                  R
+                </div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-body-md text-body-md text-on-surface font-semibold truncate">Rohan, 28</span>
+<span class="font-label-sm text-label-sm text-outline shrink-0">1d ago</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline truncate">Audio Mutual • Ambient set shared</span>
+</div>
+</div>
+</div>
+<!-- Bottom Shortcut: Spark New Frequency -->
+<button class="w-full mt-space-xs py-space-sm px-space-md rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container text-white font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-[0_0_24px_rgba(236,72,153,0.35)] hover:scale-[1.02] transition-transform cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[20px]">radar</span>
+<span>Spark New Frequency</span>
+</button>
+</aside>
+<!-- ==================== CENTER COLUMN: PRIVATE EPHEMERAL TRANSMISSION CHAMBER (6 Cols) ==================== -->
+<main class="col-span-12 lg:col-span-8 xl:col-span-6 flex flex-col bg-surface-container-low/95 backdrop-blur-2xl rounded-xl shadow-2xl overflow-hidden min-h-[820px]">
+<!-- Chamber Top Bar: Node Identity & Sync Bar -->
+<div class="px-space-md py-space-sm bg-surface-container-lowest/80 backdrop-blur-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-md">
+<!-- Node Info -->
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<img class="w-14 h-14 rounded-full object-cover shadow-[0_0_20px_rgba(221,183,255,0.4)]" data-alt="Close up of Aanya wearing cyberpunk ear cuffs that pulse with soft cyan light, dark obsidian setting with radiant magenta studio backlighting, elegant cyber-luxe aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfI6qtgIBqOZ2fxze_gelGbsmkGhset41ssq0hT4HNH9xiP8t-exr_G1Hjx8HdYUEbjB-VBhfenGUi71hXpWDfY3S7QgJp9cbn8Mran40YBtwD7vlTsL-kfHhEwTCNi1yIgomsLMOtnqCQhSfArHw10NEz7M1A0xO0cfBV5OHB1Hp3BdKCPI4ZkN8RDxpZ12pZyuWBtPLUjfbdpanV8TTQ_c_wEZYk2aP9TyPZ5A9ahEv_1RNVQo3hvA"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-tertiary shadow-[0_0_10px_rgba(76,215,246,1)] ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-md text-headline-sm text-on-surface font-bold truncate">Aanya, 25</h1>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">bolt</span> 98%
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Neural Bio-Artist • Indiranagar • Bilateral Resonance</p>
+</div>
+</div>
+<!-- Action Beams (Call, Video, Options) -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-tertiary flex items-center justify-center transition-all hover:scale-105 shadow-[0_0_14px_rgba(76,215,246,0.2)] cursor-pointer" title="Holographic Voice Beam" type="button">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center transition-all hover:scale-105 shadow-[0_0_14px_rgba(221,183,255,0.2)] cursor-pointer" title="Quantum Video Beam" type="button">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-all cursor-pointer" title="Chamber Menu" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Live Shared Audio Player Pill -->
+<div class="w-full flex items-center justify-between gap-space-md px-space-md py-2 rounded-lg bg-surface-container/70 shadow-inner">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0 animate-spin" style="animation-duration: 6s;">album</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold truncate">Tycho — Awake (Binaural 432Hz)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant truncate">Shared Synchronous Streaming</span>
+</div>
+</div>
+<!-- Animated Wave Visualizer -->
+<div class="flex items-center gap-1 h-6 shrink-0 px-space-sm">
+<div class="w-1 bg-tertiary rounded-full wave-bar-1"></div>
+<div class="w-1 bg-primary rounded-full wave-bar-2"></div>
+<div class="w-1 bg-secondary rounded-full wave-bar-3"></div>
+<div class="w-1 bg-tertiary rounded-full wave-bar-4"></div>
+<div class="w-1 bg-primary rounded-full wave-bar-5"></div>
+<div class="w-1 bg-secondary rounded-full wave-bar-6"></div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold shrink-0 hidden sm:inline">Sync Listening</span>
+</div>
+</div>
+<!-- Trust & Ephemeral Notice Banner -->
+<div class="mx-space-md mt-space-sm px-space-md py-space-xs rounded-lg bg-surface-container/40 flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0">auto_delete</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-tight">
+              Zero-knowledge node active. Messages dissolve in 24 hours unless pinned by both resonant nodes. No telemetry tracking.
+            </p>
+</div>
+<!-- Messages Stream -->
+<div class="flex-1 overflow-y-auto px-space-md py-space-md flex flex-col gap-space-md max-h-[480px]">
+<!-- Timestamp Marker -->
+<div class="flex items-center justify-center my-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest px-space-md py-0.5 rounded-full bg-surface-container-lowest/80">
+                Transmission Synchronized Today at 18:42
+              </span>
+</div>
+<!-- Icebreaker Spark Context Pill -->
+<div class="self-center max-w-md px-space-md py-space-xs rounded-full bg-surface-container-high/80 text-center shadow-[0_0_16px_rgba(183,109,255,0.12)]">
+<span class="font-label-sm text-label-sm text-primary font-semibold">
+                ✨ Aanya sparked from your bio:
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface italic">
+                “Debate matcha synths over twilight 🍵”
+              </span>
+</div>
+<!-- Incoming Message 1 (Aanya) -->
+<div class="flex items-start gap-space-sm max-w-[85%] self-start">
+<img class="w-8 h-8 rounded-full object-cover shrink-0 mt-1" data-alt="Thumbnail avatar of Aanya smiling gently with cybernetic neon magenta rim lighting against dark shadows, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALHNuQc04h5F6ZAwFesIcGW9My5HYnz7QsRniHMxv534ADjNKIGs7ST7r1CQMJ0wEovIqURerY9QBUt-tFFUmFwHuqBVKlFa3lHfOMeBZ57A0eEA0icso2N1hQ3BlC-y6a42r7FNWTqAINq7G_5fS3T2BdMOp2YQIFgsvtNmUexX34MCxNl2DphndnaD06f4rJUCTLs3f_2WuO_I2DMYBvkXvHuT0YPZxegmeh34zOwqw7-xhbWbR0vg"/>
+<div class="flex flex-col gap-1">
+<div class="p-space-md rounded-2xl rounded-tl-sm bg-surface-container text-on-surface shadow-md">
+<p class="font-body-md text-body-md leading-relaxed">
+                    Hey Kabir! I was literally tweaking an analog modular synth preset when your spark came through. Have you ever tried feeding binaural drone frequencies into ambient granular synthesis? 🎛️
+                  </p>
+</div>
+<span class="font-label-sm text-[11px] text-outline ml-2">18:43 • Delivered to Neural Node</span>
+</div>
+</div>
+<!-- Outgoing Message 1 (Kabir) -->
+<div class="flex items-start gap-space-sm max-w-[85%] self-end flex-row-reverse">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-body-md flex items-center justify-center shrink-0 mt-1 font-bold">
+                K
+              </div>
+<div class="flex flex-col items-end gap-1">
+<div class="p-space-md rounded-2xl rounded-tr-sm bg-primary/20 text-on-surface shadow-[0_0_20px_rgba(221,183,255,0.15)] flex flex-col gap-space-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                    All the time! Actually mapped a 432Hz sine sweep to a resonant bandpass filter yesterday. The warmth is unmatched. Listen to this quick patch:
+                  </p>
+<!-- Audio Player Pill Widget -->
+<div class="flex items-center gap-space-sm p-space-xs px-space-md rounded-full bg-surface-container-lowest/80">
+<button class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center cursor-pointer shadow-[0_0_10px_rgba(221,183,255,0.6)]" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Granular_Twilight.wav</span>
+<span class="font-label-sm text-[10px] text-outline">0:42 • 432Hz Binaural Stem</span>
+</div>
+<!-- Micro Sparkline / Waveform SVG -->
+<svg class="w-24 h-5 ml-2 text-tertiary" fill="none" viewbox="0 0 100 20">
+<path d="M2 10 L8 4 L14 16 L20 8 L26 14 L32 2 L38 18 L44 9 L50 15 L56 6 L62 13 L68 7 L74 12 L80 5 L86 16 L92 9 L98 10" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-1 mr-2">
+<span class="font-label-sm text-[11px] text-outline">18:45</span>
+<span class="material-symbols-outlined text-tertiary text-[14px]">done_all</span>
+</div>
+</div>
+</div>
+<!-- Incoming Message 2 (Aanya) -->
+<div class="flex items-start gap-space-sm max-w-[85%] self-start">
+<img class="w-8 h-8 rounded-full object-cover shrink-0 mt-1" data-alt="Micro thumbnail of Aanya with vibrant cyber glow, smiling warmly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvFqWJuesJv2rER1MQ7GNgnVi_4uHQyKae4WHHs4sWJyFeciaKPSekmD4O9V_pI3nyHjWsrqrSVLhkLJtWGIkW4DU5W4NlZdRbPA77SKvqkpi6MkpDWBZb1aEaLklWg1BLRZ1URGvUGcVoipcPvAd1jRDRe_PwVruLtOiYhEDKVWplMTRWOw1murECdi8Y9RDjSlYqakErGgZ-cTkiKDM1HYbp3Jrh0m48uzz_fiHVS8xri8WNR_H2oQ"/>
+<div class="flex flex-col gap-1">
+<div class="p-space-md rounded-2xl rounded-tl-sm bg-surface-container text-on-surface shadow-md">
+<p class="font-body-md text-body-md leading-relaxed">
+                    Wait, send that over! Also did you see Tycho's latest live modular recording? That's what I'm looping right now ⚡
+                  </p>
+</div>
+<span class="font-label-sm text-[11px] text-outline ml-2">18:47</span>
+</div>
+</div>
+<!-- Holographic Mood Capsule / Shared Media Card -->
+<div class="self-center w-full max-w-md p-space-md rounded-xl bg-surface-container-high/60 backdrop-blur-md shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-wide">Shared Mood Capsule</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Expiring in 23h 54m</span>
+</div>
+<div class="relative w-full h-44 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Holographic visualization of modular synthesizer patches intertwined with glowing neon bioluminescent botanical plants, cybernetic tea bar in twilight Kyoto Bengaluru blend, cyan and violet deep radiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1d6AmtJEpy-hzkonUBAQji7Sv0ydZgsTfrwtghp40J5hvYr64jSi0WvhbGuJqzyjcAY44aDdAqQfltpLezxbReMlNP10KojZdy-xtPNjmi79tXEho7bUS6TcmG9gKuTgdUpHekq9jIK5lFPN-3GrU5P7870KjUcQY_4E96CtokQZOAzsON5H3FmhJqfw8mS9Nwvviy8qlluz7moZigGLhbDxdmgl34CKe-kyC-2uwiLyXkGiCKdEPVg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent flex items-end p-space-md justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-md text-white font-bold">Twilight Modular Sanctuary</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aanya's Audio-Visual Board</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[0_0_12px_rgba(255,176,205,0.7)] cursor-pointer" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Both resonant nodes can view and pinch-expand</span>
+<span class="text-tertiary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock_clock</span> 24h Vault
+                </span>
+</div>
+</div>
+</div>
+<!-- 3. Contextual Icebreaker Drawer (Neural Prompts Bar) -->
+<div class="px-space-md py-space-xs bg-surface-container-lowest/60">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<span class="font-label-sm text-label-sm text-primary font-bold shrink-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Neural Prompts:
+              </span>
+<button class="shrink-0 px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-all cursor-pointer" type="button">
+                “What is your dream sound sanctuary?”
+              </button>
+<button class="shrink-0 px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-all cursor-pointer" type="button">
+                “Compare Tokyo vs Bengaluru cyberpunk”
+              </button>
+<button class="shrink-0 px-space-md py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-all cursor-pointer" type="button">
+                “Exchange favorite synth patch”
+              </button>
+</div>
+</div>
+<!-- 4. Message Composer -->
+<div class="p-space-md bg-surface-container-lowest/90 backdrop-blur-xl">
+<div class="flex flex-col gap-space-xs p-space-sm rounded-2xl bg-surface-container/70 shadow-lg">
+<!-- Input Bar -->
+<div class="flex items-center gap-space-sm w-full">
+<!-- Left Tools -->
+<div class="flex items-center gap-1 shrink-0">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors cursor-pointer" title="Attach Voice Spark" type="button">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors cursor-pointer" title="Ephemeral Photo Beam" type="button">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</button>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high text-on-surface-variant hover:text-tertiary flex items-center justify-center transition-colors cursor-pointer" title="Neural Vibe Emoji" type="button">
+<span class="material-symbols-outlined text-[20px]">mood</span>
+</button>
+</div>
+<!-- Textfield -->
+<input class="flex-1 bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none min-w-0 py-space-xs" id="messageInput" placeholder="Transmit encrypted spark to Aanya..." type="text"/>
+<!-- Right Tools & Transmit Button -->
+<div class="flex items-center gap-space-xs shrink-0">
+<!-- Disappearing Timer Selector -->
+<div class="hidden sm:flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">timer</span>
+<select class="bg-transparent text-on-surface-variant text-label-sm font-label-sm focus:outline-none cursor-pointer">
+<option class="bg-surface-container text-on-surface" value="24h">24 Hours</option>
+<option class="bg-surface-container text-on-surface" value="1h">1 Hour</option>
+<option class="bg-surface-container text-on-surface" value="instant">Instant Dissolve</option>
+</select>
+</div>
+<!-- Transmit Spark Button -->
+<button class="px-space-md py-space-xs rounded-full bg-gradient-to-r from-primary-container to-secondary-container text-white font-label-md text-label-md font-bold flex items-center gap-1 shadow-[0_0_20px_rgba(236,72,153,0.4)] hover:scale-105 transition-transform cursor-pointer" id="transmitButton" type="button">
+<span>Transmit</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ==================== RIGHT COLUMN: BILATERAL RESONANCE & SHARED LATTICE (3 Cols) ==================== -->
+<aside class="col-span-12 lg:col-span-12 xl:col-span-3 flex flex-col gap-space-md bg-surface-container-low/90 backdrop-blur-xl p-space-md rounded-xl shadow-xl">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Shared Lattice</h2>
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+</div>
+<!-- Aanya Mini Holographic Profile Card -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-highest/60 p-space-md flex flex-col gap-space-sm">
+<div class="relative w-full h-56 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Aanya, a creative woman with expressive eyes illuminated by ambient cyber violet and magenta light in a dark minimalist setting, looking confident and radiant, 35mm film aesthetic with cyber-luxe color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1hxQAwEuMhH7zNovRxbAmAu1D3q28qhRypsB3ij6K3nELRXF_CzaPk5chn-_BDUpg_s1u7CS7Hq7DR2TAkTXfpe492c3CDk2hT4JyT-j-G8DSAiQzZFkN-bevIWKETwnrw4HQlMgQxBu8kiAWkv-XMbCcXDVR27YJ2WdDV3bSH4O1gVliUd4BWn_QcvmLPC1cHh6Q53B9OiiE8ZScLJZdkV5nY2Qur4eEb2g1E4nZMo9F4boqXkOb4g"/>
+<div class="absolute top-space-xs right-space-xs px-space-sm py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Node In Resonance</span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-space-sm bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/70 to-transparent">
+<h3 class="font-headline-sm text-headline-sm text-white font-bold">Aanya Sharma, 25</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Neural Bio-Artist &amp; Sound Designer</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              “Looking for deep bilateral energy and late-night philosophical debates over modular synths, dark ambient coffee roasters, and twilight architecture.”
+            </p>
+</div>
+<!-- Bilateral Chemistry Gauges (Data Visualization) -->
+<div class="p-space-md rounded-xl bg-surface-container/70 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">Resonance Metrics</span>
+<!-- Gauge 1: Neural Resonance -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface">Mutual Neural Resonance</span>
+<span class="text-tertiary font-bold">98.0%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-primary rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+<!-- Gauge 2: Synthesizer Affinity -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface">Synthesizer &amp; Sonic Affinity</span>
+<span class="text-secondary font-bold">99.4%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 99.4%;"></div>
+</div>
+</div>
+<!-- Gauge 3: Shared Lattice Nodes -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">grain</span>
+<span class="font-body-sm text-body-sm text-on-surface">Shared Lattice Nodes</span>
+</div>
+<span class="font-label-md text-label-md font-bold px-space-sm py-0.5 rounded-full bg-tertiary-container/30 text-tertiary">14 Mutual</span>
+</div>
+</div>
+<!-- Ephemeral Media & Audio Vault -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-semibold">Shared Transmissions (4)</span>
+<span class="material-symbols-outlined text-outline text-[16px]">lock</span>
+</div>
+<!-- Vault Grid -->
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Item 1: Audio Stem -->
+<div class="p-space-xs rounded-lg bg-surface-container flex flex-col gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="h-16 rounded bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">graphic_eq</span>
+</div>
+<div class="flex justify-between items-center px-1">
+<span class="font-label-sm text-[10px] text-on-surface truncate">Binaural_Stem.wav</span>
+<span class="font-label-sm text-[9px] text-primary">23h left</span>
+</div>
+</div>
+<!-- Item 2: Kyoto Photo -->
+<div class="p-space-xs rounded-lg bg-surface-container flex flex-col gap-1 hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="h-16 rounded overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Atmospheric neon alleyway in neo-Tokyo with rain reflections and soft purple umbrellas, cinematic cyberpunk lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB93XkMDY-pl8PB9dX_ZO1cyD12JbiKMBJF9nWw-m8FNQ8hNp4rRSpzfYabklxhgR-ForWv_gVKRrGAQ9G_rG82Jpc03avw6GSHcxE7BGvfiTWpGm_1FgYdGo9DLAjYUbJ31prPbIoGrp50HD3u1mhN1YiDiwJtuOQy4PKwgCB5K2-IMG_4xDpUflkX4BjUZqfFj7QH9PLFXxTM1PT9ge9vf_ogPHUmdg8xLdtxSDiCwQfVFGevok1pw"/>
+<div class="absolute inset-0 bg-surface/30 backdrop-blur-[2px] flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[18px]">lock_clock</span>
+</div>
+</div>
+<div class="flex justify-between items-center px-1">
+<span class="font-label-sm text-[10px] text-on-surface truncate">Tokyo_Night.jpg</span>
+<span class="font-label-sm text-[9px] text-secondary">21h left</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety & Node Governance Section -->
+<div class="p-space-md rounded-xl bg-surface-container-highest/40 flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider font-bold">Node Guardian Protocol</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>Zero-trace ephemeral chat logs</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield</span>
+<span>Anti-screenshot watermarking active</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs">
+<button class="py-space-xs px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors text-center cursor-pointer" type="button">
+                Block Node
+              </button>
+<button class="py-space-xs px-space-sm rounded-lg bg-error-container/40 hover:bg-error-container text-error font-label-sm text-label-sm transition-colors text-center cursor-pointer" type="button">
+                Report Node
+              </button>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<!-- Micro-interaction JS for Sending Spark -->
+<script>
+    (function() {
+      const sendBtn = document.getElementById('transmitButton');
+      const input = document.getElementById('messageInput');
+      const audioSyncBtn = document.getElementById('audioSyncToggle');
+
+      if (sendBtn && input) {
+        sendBtn.addEventListener('click', function() {
+          const val = input.value.trim();
+          if (!val) return;
+
+          // Temporary visual feedback for transmission
+          const originalText = sendBtn.innerHTML;
+          sendBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">sync</span> <span>Transmitting...</span>';
+          sendBtn.classList.add('opacity-75');
+
+          setTimeout(() => {
+            sendBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span> <span>Sent</span>';
+            input.value = '';
+            setTimeout(() => {
+              sendBtn.innerHTML = originalText;
+              sendBtn.classList.remove('opacity-75');
+            }, 1200);
+          }, 450);
+        });
+
+        input.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            sendBtn.click();
+          }
+        });
+      }
+
+      if (audioSyncBtn) {
+        audioSyncBtn.addEventListener('click', function() {
+          const isMuted = audioSyncBtn.getAttribute('data-muted') === 'true';
+          if (isMuted) {
+            audioSyncBtn.setAttribute('data-muted', 'false');
+            audioSyncBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-tertiary">graphic_eq</span> <span class="hidden sm:inline">Mute Audio Sync</span>';
+          } else {
+            audioSyncBtn.setAttribute('data-muted', 'true');
+            audioSyncBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] text-outline">volume_off</span> <span class="hidden sm:inline">Audio Muted</span>';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><div class="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)] py-space-xs px-gutter-mobile"><nav class="flex items-center justify-around gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold"><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="discover" href="#"><span class="material-symbols-outlined text-[20px]">style</span><span class="font-label-sm text-label-sm">Discover</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="matches-likes" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-label-sm text-label-sm">Sparks</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="messages" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-sm text-label-sm">Chat</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="premium" href="#"><span class="material-symbols-outlined text-[20px]">electric_bolt</span><span class="font-label-sm text-label-sm">Pass</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="my-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></nav></div><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg text-on-surface-variant"><div class="flex items-center gap-space-md"><img alt="inLaamp Logo" class="h-6 w-auto object-contain opacity-80" src="https://lh3.googleusercontent.com/aida/AEtjO1U8zEgIpaA8DTTgiY3EbpEB4ybZofb-9EMskbnNanXvawFJhbQNv-q4m6TWp3NgaRgNBjdn9UiRAX7WbK4vMMu2GA99m5C9UFeCh_9jDEobFlcblwTXrL4AZc56WKbZhpFRk9H_3m4cAyr3twW2haN_aGVyvldBLC-kNw8Lcq1BshDUIHClljmyvzFphxd5HqsmGR5vwQnNcIAhVnGlALPDvxjayWCjiKj8qsP2-C0F81aMT-IsV6mSRXiQ"/><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 inLaamp Inc. Light up your connection.</p></div><div class="flex flex-wrap items-center justify-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-center" href="#">Safety</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms</a></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-md py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span>Ultra Luminescence Active</span></div></div></footer></body></html>
