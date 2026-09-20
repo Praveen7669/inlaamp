@@ -1,336 +1,740 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>inLaamp — Light up your connection</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#e8dff3", "tertiary-fixed": "#acedff", "on-primary": "#490080", "on-tertiary": "#003640", "on-surface": "#e8dff3", "on-error": "#690005", "secondary-container": "#aa0266", "on-secondary": "#640039", "surface-container-highest": "#383241", "outline": "#988d9f", "surface-container-high": "#2d2836", "surface-container": "#221d2c", "surface": "#16111f", "on-surface-variant": "#cfc2d6", "surface-container-low": "#1e1927", "on-primary-fixed": "#2c0051", "on-background": "#e8dff3", "surface-bright": "#3c3746", "background": "#16111f", "tertiary": "#4cd7f6", "primary-fixed": "#f0dbff", "primary": "#ddb7ff", "on-primary-container": "#400071", "surface-tint": "#ddb7ff", "tertiary-container": "#009eb9", "inverse-on-surface": "#332e3d", "error": "#ffb4ab", "surface-variant": "#383241", "inverse-primary": "#842bd2", "surface-dim": "#16111f", "on-tertiary-fixed": "#001f26", "primary-container": "#b76dff", "on-error-container": "#ffdad6", "secondary-fixed-dim": "#ffb0cd", "on-secondary-fixed-variant": "#8c0053", "secondary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#4cd7f6", "surface-container-lowest": "#100c19", "outline-variant": "#4d4354", "on-tertiary-container": "#002f38", "on-tertiary-fixed-variant": "#004e5c", "primary-fixed-dim": "#ddb7ff", "on-secondary-container": "#ffbad3", "error-container": "#93000a", "secondary": "#ffb0cd", "on-primary-fixed-variant": "#6900b3", "on-secondary-fixed": "#3e0022" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-md": "1rem", "margin": "3rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "display-lg-mobile": ["Syne"], "headline-md": ["Syne"], "display-md-mobile": ["Syne"], "headline-sm": ["Syne"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Syne"], "body-sm": ["Plus Jakarta Sans"], "display-lg": ["Syne"], "label-lg": ["Plus Jakarta Sans"], "display-md": ["Syne"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-md-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-md": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen relative selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="inLaamp Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U8zEgIpaA8DTTgiY3EbpEB4ybZofb-9EMskbnNanXvawFJhbQNv-q4m6TWp3NgaRgNBjdn9UiRAX7WbK4vMMu2GA99m5C9UFeCh_9jDEobFlcblwTXrL4AZc56WKbZhpFRk9H_3m4cAyr3twW2haN_aGVyvldBLC-kNw8Lcq1BshDUIHClljmyvzFphxd5HqsmGR5vwQnNcIAhVnGlALPDvxjayWCjiKj8qsP2-C0F81aMT-IsV6mSRXiQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">inLaamp</span><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block tracking-widest uppercase">Light up your connection</span></div></div><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container/60 p-space-xs rounded-full backdrop-blur-md" data-active-classes="bg-surface-container-highest text-primary font-semibold shadow-[0_0_12px_rgba(221,183,255,0.2)]"><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-all bg-surface-container-highest text-primary font-semibold shadow-[0_0_12px_rgba(221,183,255,0.2)]" data-path="discover" href="#">Discover</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="matches-likes" href="#">Matches &amp; Likes</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="messages" href="#">Messages</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="premium" href="#">Premium</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="safety-center" href="#">Safety Center</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="my-profile" href="#">My Profile</a></nav><div class="flex items-center gap-space-md shrink-0"><button class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-semibold shadow-[0_0_24px_rgba(236,72,153,0.35)] hover:scale-105 transition-transform duration-200 cursor-pointer" type="button">Find Your Spark</button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_rgba(221,183,255,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 pb-24 xl:pb-0 min-h-screen bg-surface"><div class="flex flex-col w-full text-on-surface overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+<!-- Top Ambient Glow Orbs -->
+<div class="relative w-full">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/20 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-40 right-10 w-[30rem] h-[30rem] bg-secondary-container/20 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="absolute top-96 left-10 w-80 h-80 bg-tertiary-container/15 rounded-full blur-[110px] pointer-events-none"></div>
+</div>
+<!-- Accessibility Motion Toggle Floating Pill -->
+<div class="fixed top-24 right-6 z-40">
+<button aria-label="Toggle reduced motion" class="group flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high/80 backdrop-blur-md text-on-surface-variant hover:text-on-surface shadow-md hover:bg-surface-container-highest transition-all duration-300" id="motion-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary group-hover:rotate-45 transition-transform" id="motion-icon">motion_photos_on</span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase" id="motion-status-text">Dynamic Flow</span>
+</button>
+</div>
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[942px] flex items-center justify-center px-gutter md:px-margin -mt-20 pt-32 pb-space-xl">
+<!-- WebGL Spatial Atmosphere Layer -->
+<!-- STITCH_SHADER_START:ANIMATION_2 class="absolute inset-0 w-full h-full opacity-50 pointer-events-none" -->
+<div class="absolute inset-0 w-full h-full opacity-50 pointer-events-none" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
     }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #090a1f;
-      color: white;
-      min-height: 100vh;
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+// Simplex/Perlin noise helper
+vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+
+float snoise(vec2 v) {
+  const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+                     -0.577350269189626, 0.024390243902439);
+  vec2 i  = floor(v + dot(v, C.yy) );
+  vec2 x0 = v -   i + dot(i, C.xx);
+  vec2 i1;
+  i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+  vec4 x12 = x0.xyxy + C.xxzz;
+  x12.xy -= i1;
+  i = mod289(i);
+  vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+        + i.x + vec3(0.0, i1.x, 1.0 ));
+  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+  m = m*m ;
+  m = m*m ;
+  vec3 x = 2.0 * fract(p * C.www) - 1.0;
+  vec3 h = abs(x) - 0.5;
+  vec3 ox = floor(x + 0.5);
+  vec3 a0 = x - ox;
+  m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+  vec3 g;
+  g.x  = a0.x  * x0.x  + h.x  * x0.y;
+  g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+  return 130.0 * dot(m, g);
+}
+
+void main() {
+    vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+    vec2 p = uv * 2.0 - 1.0;
+    p.x *= u_resolution.x / u_resolution.y;
+
+    float t = u_time * 0.2;
+    vec2 mouseNorm = (u_mouse / u_resolution.xy) * 0.4;
+    
+    // Multi-octave organic cyber aurora flows
+    float n1 = snoise(vec2(p.x * 0.7 + mouseNorm.x, p.y * 0.8 - t * 0.4));
+    float n2 = snoise(vec2(p.x * 1.3 - t * 0.3, p.y * 1.2 + n1 * 0.6));
+    float n3 = snoise(vec2(p.x * 2.0 + t * 0.2, p.y * 2.0 + n2 * 0.5));
+
+    // Volumetric glow orbs
+    float orb1 = length(p - vec2(sin(t*0.7)*0.6, cos(t*0.5)*0.4));
+    float orb2 = length(p - vec2(cos(t*0.6)*-0.5, sin(t*0.8)*-0.3));
+    float glow1 = smoothstep(1.3, 0.1, orb1);
+    float glow2 = smoothstep(1.4, 0.2, orb2);
+
+    // Futuristic palette
+    vec3 deepBg = vec3(0.043, 0.027, 0.082); // #0B0714
+    vec3 midViolet = vec3(0.12, 0.06, 0.22);
+    vec3 electricPurple = vec3(0.55, 0.22, 0.95); // #8B5CF6
+    vec3 hotPink = vec3(0.92, 0.18, 0.58); // #EC4899
+    vec3 cyanSpark = vec3(0.04, 0.72, 0.85); // #06B6D4
+
+    vec3 col = deepBg;
+    col += midViolet * (n1 * 0.5 + 0.5) * 0.7;
+    col += electricPurple * (glow1 * 0.35 + n2 * 0.18);
+    col += hotPink * (glow2 * 0.25 + n3 * 0.15);
+    col += cyanSpark * pow(max(0.0, n2 * n3), 3.0) * 0.25;
+
+    // Subtle vignette
+    float vig = 1.0 - length(uv - 0.5) * 0.65;
+    col *= vig;
+
+    gl_FragColor = vec4(col, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
     }
+  });
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 7%;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      color: #ffffff;
-    }
-
-    .logo span {
-      color: #ff4f9a;
-    }
-
-    .login {
-      padding: 10px 20px;
-      border: 1px solid #ff4f9a;
-      border-radius: 25px;
-      color: white;
-      text-decoration: none;
-    }
-
-    .hero {
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 50px;
-      padding: 50px 7%;
-    }
-
-    .hero-text {
-      max-width: 600px;
-    }
-
-    .hero h1 {
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: 1;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 span {
-      color: #ff4f9a;
-    }
-
-    .hero p {
-      font-size: 19px;
-      line-height: 1.6;
-      color: #c5c6d8;
-      margin-bottom: 30px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .primary {
-      background: linear-gradient(135deg, #ff4f9a, #8b5cf6);
-      color: white;
-      padding: 15px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .secondary {
-      border: 1px solid #555875;
-      color: white;
-      padding: 15px 28px;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-
-    .phone {
-      width: 280px;
-      height: 520px;
-      border: 8px solid #252640;
-      border-radius: 38px;
-      background: #11132d;
-      padding: 15px;
-      box-shadow: 0 0 50px rgba(255, 79, 154, 0.2);
-    }
-
-    .profile {
-      height: 100%;
-      border-radius: 25px;
-      overflow: hidden;
-      position: relative;
-      background: linear-gradient(160deg, #7c3aed, #ec4899);
-      display: flex;
-      align-items: flex-end;
-      padding: 22px;
-    }
-
-    .profile-info {
-      width: 100%;
-    }
-
-    .profile-info h2 {
-      font-size: 25px;
-      margin-bottom: 5px;
-    }
-
-    .profile-info p {
-      color: white;
-      margin: 0;
-      font-size: 14px;
-    }
-
-    .actions {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 18px;
-      font-size: 30px;
-    }
-
-    section {
-      padding: 70px 7%;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
-
-    .subtitle {
-      color: #aaaec5;
-      margin-bottom: 40px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      background: #11132d;
-      border: 1px solid #252640;
-      border-radius: 20px;
-      padding: 30px;
-    }
-
-    .card .icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #aaaec5;
-      line-height: 1.5;
-    }
-
-    .premium {
-      max-width: 500px;
-      margin: auto;
-      background: linear-gradient(145deg, #171936, #11132d);
-      border: 1px solid #ff4f9a;
-      border-radius: 25px;
-      padding: 40px;
-    }
-
-    .price {
-      font-size: 45px;
-      font-weight: bold;
-      margin: 20px 0;
-    }
-
-    .price small {
-      font-size: 15px;
-      color: #aaaec5;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777b99;
-      border-top: 1px solid #20223b;
-    }
-
-    @media (max-width: 750px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .buttons {
-        justify-content: center;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .phone {
-        width: 250px;
-        height: 460px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <nav>
-    <div class="logo">in<span>Laamp</span></div>
-    <a href="#" class="login">Login</a>
-  </nav>
-
-  <main>
-
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Light up your <span>connection.</span></h1>
-
-        <p>
-          Meet genuine people, discover new connections,
-          and find someone who lights up your world.
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+<div class="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Narrative Column -->
+<div class="lg:col-span-6 flex flex-col items-start gap-space-lg">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-high/60 backdrop-blur-xl shadow-inner">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Resonance Engine v3.4 Active</span>
+<span class="text-on-surface-variant text-[11px]">• 4,812 Connected Now</span>
+</div>
+<!-- Grand Statement -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-lg text-display-lg tracking-tight leading-[1.05] text-transparent bg-clip-text bg-gradient-to-r from-primary-fixed via-secondary to-tertiary drop-shadow-[0_0_35px_rgba(221,183,255,0.3)]">
+            Your next spark starts here.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mt-space-sm leading-relaxed">
+            Transcend ordinary swiping with inLaamp's immersive 3D resonance matching, dynamic holographic chemistry, and hyper-private authentic connections.
+          </p>
+</div>
+<!-- CTAs with Luminous Pulse -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="relative group inline-flex items-center justify-center gap-space-sm px-space-xl py-4 rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container text-on-primary font-label-lg text-label-lg font-bold shadow-[0_0_32px_rgba(183,109,255,0.45)] hover:shadow-[0_0_48px_rgba(236,72,153,0.7)] hover:scale-[1.03] active:scale-[0.98] transition-all duration-300" data-path="discover" href="#">
+<span class="relative z-10 text-inverse-surface tracking-wide flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed">electric_bolt</span>
+              Find Your Spark
+            </span>
+<div class="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity blur-sm"></div>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-4 rounded-full bg-surface-container-high/60 backdrop-blur-2xl text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest hover:text-tertiary hover:shadow-[0_0_24px_rgba(76,215,246,0.3)] transition-all duration-300" href="#resonance-features">
+<span class="tracking-wide">Explore inLaamp</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Trust Vector Ticker -->
+<div class="grid grid-cols-3 gap-space-md pt-space-lg w-full max-w-lg">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">500k+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sparks Lit</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Biometric Verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">4.9 / 5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Romance Index</span>
+</div>
+</div>
+</div>
+<!-- Right 3D Interactive Card Deck Column -->
+<div class="lg:col-span-6 relative flex items-center justify-center min-h-[580px] w-full" id="card-stage-container">
+<!-- Ambient Backlight Aura -->
+<div class="absolute w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-tr from-secondary-container/40 to-primary-container/30 blur-[90px] pointer-events-none"></div>
+<!-- Background Stacking Layer 3 (Zoe) -->
+<div class="deck-card absolute w-[290px] sm:w-[320px] h-[460px] rounded-xl bg-surface-container-low/70 backdrop-blur-xl shadow-2xl transition-all duration-500 pointer-events-none translate-x-12 -translate-y-6 rotate-6 scale-90 opacity-60" id="deck-card-3">
+<div class="relative w-full h-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[30%]" data-alt="Futuristic portrait of Zoe, a 24-year-old neuro-aesthetician with sleek holographic hair strands, neon cyan backlighting, cinematic volumetric shadows, and ultra-high-definition atmospheric lighting in midnight violet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEpaNbcNQMkw84TZwalc3j7TlcMoLznvQT-wOWLvy7XBEJkAWSztvPDYdS0xP65PXZImGOlti1jY0aTpk5eQBpV3N8CGM-gJJo5yqLsdwa3V8K6sbwZcOn_pkaHtIrWFfPzbPdc65w7HSPXzMeTwbyYTQSfU69c1zNv9QPpRml9zW-9iuhB-I0FUJrtCSaYHxuASchuCaYyPSuobbe4aZwHY7n-4bI480hOi5y3H7TZ3bYPP0fkX3wXQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Zoe, 24</span>
+<p class="font-label-sm text-label-sm text-tertiary">Neuro-Aesthetician • 92% Resonance</p>
+</div>
+</div>
+</div>
+<!-- Background Stacking Layer 2 (Kaelen) -->
+<div class="deck-card absolute w-[300px] sm:w-[335px] h-[480px] rounded-xl bg-surface-container/80 backdrop-blur-xl shadow-2xl transition-all duration-500 pointer-events-none -translate-x-8 -translate-y-3 -rotate-4 scale-95 opacity-80" id="deck-card-2">
+<div class="relative w-full h-full rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Atmospheric cyber-luxe portrait of Kaelen, a 28-year-old quantum sound designer with stylish ambient ear implants emitting faint starlight glow, dressed in obsidian tailored textures with electric magenta edge rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnLp8H95wJ30AttoAeafb5sKBE1-xsWEkV3ii5ZAwC6VNRyesa_Vw5HKhI9gK7NP_fOtdJOTtRghCvMBgOPjJPbBVWZM_wJdSmIbTHx-f5tMT9WL_NRt-ajoOVnCjpy42fFn3hUvxkiBNgDTFM1fuXPo1vuTfbmXAXKIL9Io3xOWFYvXEyeCJ4i-SoeHuQkRyfOAthFe_X9oq7qKzLhfiDpV8S1cwcrbgl8lOdKIAmVRvu8ep6vLOTVg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Kaelen, 28</span>
+<p class="font-label-sm text-label-sm text-secondary">Quantum Sound Designer • 95% Resonance</p>
+</div>
+</div>
+</div>
+<!-- Foreground Active Tilt Card (Seraphina) -->
+<div class="deck-card relative z-20 w-[310px] sm:w-[350px] h-[520px] rounded-xl bg-surface-container-high/90 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_40px_rgba(183,109,255,0.25)] transition-transform duration-200 ease-out cursor-grab select-none" id="deck-card-active">
+<div class="relative w-full h-full rounded-xl overflow-hidden flex flex-col justify-between p-space-md">
+<!-- Real Card Image Background -->
+<img class="absolute inset-0 w-full h-full object-cover pointer-events-none" data-alt="Close-up editorial portrait of Seraphina, 26, cyber architect with radiant reflective makeup, floating geometric crystal jewelry, and deep ambient neon illumination with rich violet and cyan flares" id="active-card-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8UMxTzXna8DRerSzzADLpaXvhxxF2MgHy8cRTxwTIYRAv0A3mA1BftKoLmSDD00dBlHa_3--Zmh3odsTtcTLmtmHcsW0mlYPtPGilNROXjArRtnZcCf0EYHMoCkCdfCrQCEKcbwDOzYjo-YavNAjvLuLn6HIXroW9Uef7jBLDCEkDAXS4Fwzz4vO0gltl9Py9s9mbOWfHXKAFdxE8Xy33uv5S9W65bTVAAGOPSgbaTW3sIwOWwyXTUw"/>
+<!-- Depth Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-surface-container-lowest/20 pointer-events-none"></div>
+<!-- Card Top Indicators -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<span class="inline-flex items-center gap-1.5 px-space-md py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl font-label-sm text-label-sm text-tertiary-fixed font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary animate-pulse" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                98% Spark Resonance
+              </span>
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-xl text-primary shadow-sm" title="Biometrically Verified">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</span>
+</div>
+<!-- Match Sparks Particle Floating Indicator -->
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 bg-secondary-container/30 backdrop-blur-sm" id="swipe-overlay-spark">
+<div class="p-space-lg rounded-full bg-secondary text-on-secondary shadow-[0_0_50px_rgba(255,176,205,0.9)] animate-bounce">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<div class="absolute inset-0 z-30 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 bg-surface-container-lowest/60 backdrop-blur-sm" id="swipe-overlay-pass">
+<div class="p-space-lg rounded-full bg-surface-container-highest text-outline shadow-xl">
+<span class="material-symbols-outlined text-4xl">close</span>
+</div>
+</div>
+<!-- Card Bottom Bio & Interactive Deck Triggers -->
+<div class="relative z-10 flex flex-col gap-space-sm pt-space-md">
+<div class="flex items-baseline justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight" id="active-card-name">Seraphina, 26</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1" id="active-card-role">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+                    Neo-Varanasi • Cyber Architect
+                  </p>
+</div>
+</div>
+<!-- Interest Tags -->
+<div class="flex flex-wrap gap-1.5 py-1" id="active-card-tags">
+<span class="px-space-sm py-0.5 rounded-full bg-primary/10 text-primary-fixed text-[11px] font-label-sm font-semibold">Virtual Metropolises</span>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary/10 text-secondary-fixed-dim text-[11px] font-label-sm font-semibold">Synthwave</span>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary/10 text-tertiary-fixed-dim text-[11px] font-label-sm font-semibold">Cosmic Tea</span>
+</div>
+<!-- Tactile Floating Controls -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm">
+<!-- Pass Button -->
+<button aria-label="Pass Profile" class="flex-1 flex items-center justify-center h-12 rounded-full bg-surface-container-lowest/80 text-on-surface-variant hover:text-error hover:bg-surface-container-high shadow-lg hover:shadow-[0_0_20px_rgba(255,180,171,0.3)] transition-all duration-200 active:scale-90 cursor-pointer" id="btn-pass" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<!-- Super Spark Button -->
+<button aria-label="Super Spark" class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-primary-container to-tertiary text-inverse-surface shadow-[0_0_25px_rgba(183,109,255,0.4)] hover:shadow-[0_0_35px_rgba(76,215,246,0.6)] hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer" id="btn-super" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+</button>
+<!-- Like / Spark Button -->
+<button aria-label="Spark Connection" class="flex-1 flex items-center justify-center h-12 rounded-full bg-gradient-to-r from-secondary-container to-secondary text-on-secondary shadow-[0_0_25px_rgba(236,72,153,0.4)] hover:shadow-[0_0_40px_rgba(255,176,205,0.7)] transition-all duration-200 active:scale-90 cursor-pointer" id="btn-spark" type="button">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MATCH DIALOG TOAST (Micro-Interaction Reveal) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-gutter bg-surface-container-lowest/80 backdrop-blur-2xl opacity-0 pointer-events-none transition-all duration-300" id="match-modal">
+<div class="relative w-full max-w-md rounded-xl bg-surface-container-high p-space-xl text-center shadow-[0_0_80px_rgba(236,72,153,0.4)] flex flex-col items-center gap-space-md">
+<div class="w-20 h-20 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-[0_0_40px_rgba(221,183,255,0.6)] animate-pulse">
+<span class="material-symbols-outlined text-4xl text-on-primary" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Resonance Ignited</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-extrabold">It's a Bilateral Spark!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-1">
+          You and Seraphina have harmonized at 98% mutual affinity. The encrypted chamber is unlocked.
         </p>
-
-        <div class="buttons">
-          <a href="register.html" class="primary">Create Account</a>
-          <a href="#how" class="secondary">How it works</a>
-        </div>
-      </div>
-
-      <div class="phone">
-        <div class="profile">
-          <div class="profile-info">
-            <h2>Someone Special ✨</h2>
-            <p>Looking for meaningful connections</p>
-
-            <div class="actions">
-              <span>❌</span>
-              <span>❤️</span>
-            </div>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm w-full pt-space-xs">
+<a class="flex-1 py-3 px-space-md rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold shadow-lg hover:scale-105 transition-all text-center" data-path="messages" href="#">
+          Open Chamber
+        </a>
+<button class="flex-1 py-3 px-space-md rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-all" id="btn-close-match" type="button">
+          Keep Swiping
+        </button>
+</div>
+</div>
+</div>
+<!-- SOCIAL PROOF / METRICS BAND -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-space-lg items-center justify-between">
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1">
+<span class="font-headline-lg text-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary font-extrabold">500,000+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Luminescent Sparks Lit</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1">
+<span class="font-headline-lg text-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-secondary to-tertiary font-extrabold">Zero Bots</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">100% Liveness Video Verified</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1">
+<span class="font-headline-lg text-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-primary-fixed font-extrabold">8.4 ms</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-Time Chemistry Engine</span>
+</div>
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-1">
+<span class="font-headline-lg text-headline-lg text-transparent bg-clip-text bg-gradient-to-r from-primary-fixed to-secondary-fixed font-extrabold">₹14 / wk</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Affordable Luxury Spark Pass</span>
+</div>
+</div>
+</section>
+<!-- INNOVATION HIGHLIGHTS (Bento Grid) -->
+<section class="w-full py-space-xl px-gutter max-w-7xl mx-auto flex flex-col gap-space-xl" id="resonance-features">
+<!-- Section Heading -->
+<div class="flex flex-col items-center text-center gap-space-xs max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Engineering Next-Gen Intimacy</span>
+<h2 class="font-display-md text-display-md text-on-surface font-extrabold tracking-tight">
+        Why inLaamp Outshines the Rest
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        Tired of superficial static profiles? We replaced 2D swipe fatigue with volumetric physics, genuine chemistry vectors, and high-trust privacy.
+      </p>
+</div>
+<!-- Bento Architecture -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg">
+<!-- Bento Item 1: Kinetic Discovery (Large, 8 Cols) -->
+<div class="md:col-span-8 group relative rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl overflow-hidden shadow-xl hover:shadow-[0_0_40px_rgba(183,109,255,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[380px]">
+<div class="relative z-10 flex flex-col gap-space-sm max-w-md">
+<div class="w-12 h-12 rounded-lg bg-primary/20 text-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-3xl">view_in_ar</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">3D Kinetic Discovery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Explore authentic daters with realistic spatial depth. Feel spring-loaded fluid physics as you drag, tilt, and peek into multidimensional bio holograms.
+          </p>
+</div>
+<!-- Inline SVG Visualization: Kinetic Gyro Wave -->
+<div class="relative z-10 pt-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="flex-1 bg-surface-container-high/80 rounded-lg p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Spatial Depth Index</span>
+<span class="font-label-lg text-label-lg font-bold text-primary">6-DoF Tactile</span>
+</div>
+<div class="flex-1 bg-surface-container-high/80 rounded-lg p-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Card Refresh Rate</span>
+<span class="font-label-lg text-label-lg font-bold text-tertiary">120 Hz Pro</span>
+</div>
+</div>
+</div>
+<div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-primary/10 blur-[80px] pointer-events-none group-hover:bg-primary/20 transition-colors"></div>
+</div>
+<!-- Bento Item 2: Bilateral Spark Resonance (Small, 4 Cols) -->
+<div class="md:col-span-4 group relative rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl overflow-hidden shadow-xl hover:shadow-[0_0_40px_rgba(236,72,153,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[380px]">
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">flare</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Bilateral Spark</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            No teaser blur behind paywalls. Connections reveal exclusively when both human energies ignite in true bilateral resonance.
+          </p>
+</div>
+<!-- Inline SVG Resonance Waveform -->
+<div class="relative z-10 w-full pt-space-md">
+<svg class="w-full h-14 stroke-secondary" fill="none" viewbox="0 0 200 60">
+<path class="opacity-40" d="M0 30 Q 25 5, 50 30 T 100 30 T 150 50 T 200 30" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<path class="animate-pulse" d="M0 30 Q 35 55, 70 30 T 130 10 T 170 30 T 200 30" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<span class="font-label-sm text-label-sm text-secondary-fixed text-center block mt-1">Symmetric Match Verification</span>
+</div>
+<div class="absolute -left-10 -bottom-10 w-60 h-60 rounded-full bg-secondary/10 blur-[60px] pointer-events-none"></div>
+</div>
+<!-- Bento Item 3: Hyper-Private Encrypted Chambers (4 Cols) -->
+<div class="md:col-span-4 group relative rounded-xl bg-surface-container/60 backdrop-blur-xl p-space-xl overflow-hidden shadow-xl hover:shadow-[0_0_40px_rgba(76,215,246,0.15)] transition-all duration-300 flex flex-col justify-between min-h-[360px]">
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-tertiary/20 text-tertiary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-3xl">enhanced_encryption</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Ephemeral Chambers</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Anti-screenshot visual shields, disappearing chats, and zero metadata storage for peace of mind.
+          </p>
+</div>
+<div class="relative z-10 flex items-center gap-space-sm bg-surface-container-lowest/70 p-space-sm rounded-lg">
+<span class="material-symbols-outlined text-tertiary text-lg">shield_lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zero-Knowledge Chemistry Keys</span>
+</div>
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-tertiary/10 blur-[60px] pointer-events-none"></div>
+</div>
+<!-- Bento Item 4: Affordable Luxury Spark Pass (8 Cols) -->
+<div class="md:col-span-8 group relative rounded-xl bg-gradient-to-r from-surface-container/90 via-surface-container-high/60 to-surface-container/90 backdrop-blur-xl p-space-xl overflow-hidden shadow-xl flex flex-col md:flex-row items-center justify-between gap-space-lg min-h-[360px]">
+<div class="relative z-10 flex flex-col gap-space-sm max-w-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/50 text-secondary-fixed font-label-sm text-label-sm w-max font-bold">
+<span class="material-symbols-outlined text-sm">stars</span> Premium Transformed
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="how">
-      <h2>How inLaamp works</h2>
-      <p class="subtitle">Simple, safe and made for real connections.</p>
-
-      <div class="cards">
-
-        <div class="card">
-          <div class="icon">👤</div>
-          <h3>Create your profile</h3>
-          <p>
-            Tell people a little about yourself and
-            add your best photos.
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Affordable Luxury</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            No exploitative ₹2,500/month traps. Enjoy unlimited rewinds, priority spark resonance, and traveler mode starting at just ₹14 per week.
           </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">💜</div>
-          <h3>Discover people</h3>
-          <p>
-            Like people you're interested in or
-            pass and continue discovering.
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="icon">💬</div>
-          <h3>Make a match</h3>
-          <p>
-            When two people like each other,
-            it's a match. Start chatting!
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Premium</h2>
-      <p class="subtitle">Get more from your connections.</p>
-
-      <div class="premium">
-        <h3>inLaamp Premium</h3>
-
-        <div class="price">
-          ₹14 <small>/ week</small>
-        </div>
-
-        <p class="subtitle">
-          More likes • See who liked you • Advanced filters
-          • Profile boost • No ads
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary font-bold hover:underline" data-path="premium" href="#">
+              View Spark Pass benefits <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Pricing Holographic Badge Display -->
+<div class="relative z-10 shrink-0 w-full sm:w-64 p-space-lg rounded-xl bg-surface-container-lowest/80 shadow-2xl flex flex-col items-center text-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Weekly Spark Access</span>
+<div class="flex items-baseline gap-1">
+<span class="font-display-md text-display-md text-on-surface font-extrabold">₹14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ week</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cancel anytime in one tap.</p>
+<a class="w-full mt-space-sm py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:scale-105 transition-all text-center" data-path="premium" href="#">
+            Claim Intro Offer
+          </a>
+</div>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- HOW IT SPARKS (3-STEP VISUAL JOURNEY) -->
+<section class="w-full py-space-xl bg-surface-container-low/50 px-gutter">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col items-center text-center gap-space-xs max-w-xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">The inLaamp Method</span>
+<h2 class="font-display-md text-display-md text-on-surface font-extrabold tracking-tight">How It Sparks</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Three luminous stages crafted to convert ambient curiosity into unforgettable romance.
         </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="relative rounded-xl bg-surface-container/70 backdrop-blur-xl p-space-xl flex flex-col gap-space-md shadow-lg group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-display-md text-display-md font-extrabold text-outline-variant group-hover:text-primary transition-colors">01</span>
+<div class="w-10 h-10 rounded-full bg-primary/15 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Ignite Your Aura</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Curate your vibe tags, musical taste nodes, and kinetic visual presence. Our neural engine maps your personal aura across high-compatibility vectors.
+            </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative rounded-xl bg-surface-container/70 backdrop-blur-xl p-space-xl flex flex-col gap-space-md shadow-lg group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-display-md text-display-md font-extrabold text-outline-variant group-hover:text-secondary transition-colors">02</span>
+<div class="w-10 h-10 rounded-full bg-secondary/15 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">touch_app</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kinetic 3D Swiping</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Interact naturally with volumetric cards that react to every tilt. Read resonance scores calculated in real-time before releasing your spark.
+            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative rounded-xl bg-surface-container/70 backdrop-blur-xl p-space-xl flex flex-col gap-space-md shadow-lg group hover:bg-surface-container-high transition-all">
+<div class="flex items-center justify-between">
+<span class="font-display-md text-display-md font-extrabold text-outline-variant group-hover:text-tertiary transition-colors">03</span>
+<div class="w-10 h-10 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">The Spark Moment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              When mutual chemistry matches, your screens ignite into an encrypted private chamber with interactive icebreakers crafted for effortless conversation.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- IMMERSIVE COMMUNITY SHOWCASE CAROUSEL (Mini Visual Grid) -->
+<section class="w-full py-space-xl px-gutter max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">High Resonance Singles</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Ready to illuminate their world</h2>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-fixed flex items-center gap-1 font-semibold" data-path="discover" href="#">
+        Discover everyone near you <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3 Photorealistic Community Daters -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Dater 1 -->
+<div class="relative group h-96 rounded-xl overflow-hidden shadow-xl bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of Priya, 25, a visual experience artist in Mumbai with glowing ambient light installations in the background, neon rim lights framing her hair, wearing a sleek modern violet outfit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw9EGjGQbHGvnZQt2n23wXXCNILeMcUmQ2-SrPWFd1xLkqjj1_nexAhk01Oe-OtzAeAXKIZdCR9OwBtfKLf9cVo4bA8xwLtfjgYlaGJ7PZXagik5PHpp5wn3LdhbNs4oTrjEbAlE1aUnC3MXBevb4rm60Qv_VR6KNPXSwIPFlI8Mjc6ik0E_tobFpokNsIZSRYk3HR_35fiLH0or3XYNEHWZce5yFHopEkexr516DBZOsBUKv98dhqEA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-4 right-4 px-space-sm py-1 rounded-full bg-surface-container-lowest/70 backdrop-blur-md font-label-sm text-label-sm text-tertiary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span> 96% Match
+        </div>
+<div class="absolute bottom-4 left-4 right-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Priya, 25</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Visual Experience Artist • Bandra</p>
+</div>
+</div>
+<!-- Dater 2 -->
+<div class="relative group h-96 rounded-xl overflow-hidden shadow-xl bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of Aditya, 27, a robotics researcher in Bengaluru seated at a moody midnight ambient workshop with cyan and magenta holographic test rigs softly casting warm highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPY_lUN2HJVnlGpjuT_NebqUki4X-XhfS14au9OTo0rJxmuMO-xFGmln5WGMLtnfW3GuderpX1ErSsOpnGhSbe80nYaiqpf2meGr-MHvmmCLFTie9H7IYzWUpnXqPQ-vWfhxmy8zhgtOTzyIXbXqAEGy2fdzJdTrYUZVQxJ9CebBmI-NPKBYY3jJMm1jVwVD4NOwEmT8Trwkilj9C9-dIhE_ha-kGJUCB3ZOzPOarBj-cezMvhMgKhIg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-4 right-4 px-space-sm py-1 rounded-full bg-surface-container-lowest/70 backdrop-blur-md font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 94% Match
+        </div>
+<div class="absolute bottom-4 left-4 right-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Aditya, 27</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Robotics Researcher • Indiranagar</p>
+</div>
+</div>
+<!-- Dater 3 -->
+<div class="relative group h-96 rounded-xl overflow-hidden shadow-xl bg-surface-container-high sm:col-span-2 lg:col-span-1">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of Reya, 24, an ambient synth composer in New Delhi standing in an illuminated art gallery terrace at night with glowing magenta neon reflections and dark violet shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzuGfAHVm4eVSY-fth6jW39SrTBOV_PBDswPDjl1332T-RMER41Eq5PaS_C9myj8RZBrE_2lsr29YN28NNujNceF6d_utLyeW4NTrv6mq4NRyaOETATYLIFXmsMj3BqpMgEmjIiHN21EEAnTbIffrYPQqekqz10HAYv-idKXnXqW80d4A38zzcg6_3EAPskQQL9a8vhsIFIiJOlA3zEFt2rwoY3w_6DCaGd1JjRiLLQ_NCMKNP6Dc3Tw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-4 right-4 px-space-sm py-1 rounded-full bg-surface-container-lowest/70 backdrop-blur-md font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 99% Match
+        </div>
+<div class="absolute bottom-4 left-4 right-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Reya, 24</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Ambient Composer • Hauz Khas</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CALL TO ACTION BANNER -->
+<section class="w-full py-space-xl px-gutter">
+<div class="max-w-5xl mx-auto rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-lowest p-space-xl md:p-16 relative overflow-hidden shadow-2xl text-center flex flex-col items-center gap-space-lg">
+<!-- Background Ambient Glow Flares -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-24 right-10 w-72 h-72 bg-secondary/20 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary font-bold">Step into the Light</span>
+<h2 class="font-display-md text-display-md text-on-surface font-extrabold tracking-tight">
+          Ready to experience dating with actual depth?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Join half a million discerning people who chose bilateral resonance over endless mindless swiping.
+        </p>
+</div>
+<div class="relative z-10 flex flex-wrap items-center justify-center gap-space-md pt-2">
+<a class="px-space-xl py-4 rounded-full bg-gradient-to-r from-primary-container via-secondary-container to-tertiary-container text-on-primary font-label-lg text-label-lg font-bold shadow-[0_0_35px_rgba(183,109,255,0.4)] hover:shadow-[0_0_55px_rgba(236,72,153,0.7)] hover:scale-105 active:scale-95 transition-all duration-300" data-path="discover" href="#">
+          Light Up Your Connection Now
+        </a>
+<a class="px-space-lg py-4 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all" data-path="safety-center" href="#">
+          Explore Safety Standards
+        </a>
+</div>
+<div class="relative z-10 flex items-center justify-center gap-space-lg pt-4 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-tertiary">check_circle</span> iOS &amp; Android App</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-tertiary">check_circle</span> 100% Encrypted</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm text-tertiary">check_circle</span> No Hidden Upsells</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function initInLaampInteractivity() {
+    let motionEnabled = true;
+    const motionToggleBtn = document.getElementById('motion-toggle-btn');
+    const motionIcon = document.getElementById('motion-icon');
+    const motionStatusText = document.getElementById('motion-status-text');
 
-        <a href="#" class="primary">Get Premium</a>
-      </div>
-    </section>
+    const cardStage = document.getElementById('card-stage-container');
+    const activeCard = document.getElementById('deck-card-active');
+    const card2 = document.getElementById('deck-card-2');
+    const card3 = document.getElementById('deck-card-3');
+    const sparkOverlay = document.getElementById('swipe-overlay-spark');
+    const passOverlay = document.getElementById('swipe-overlay-pass');
 
-  </main>
+    const btnPass = document.getElementById('btn-pass');
+    const btnSuper = document.getElementById('btn-super');
+    const btnSpark = document.getElementById('btn-spark');
+    const matchModal = document.getElementById('match-modal');
+    const btnCloseMatch = document.getElementById('btn-close-match');
 
-  <footer>
-    © 2026 inLaamp — Light up your connection.
-  </footer>
+    // Dater Deck Database for cycle
+    const daters = [
+      {
+        name: "Seraphina, 26",
+        role: "Neo-Varanasi • Cyber Architect",
+        resonance: "98% Spark Resonance",
+        tags: ["Virtual Metropolises", "Synthwave", "Cosmic Tea"]
+      },
+      {
+        name: "Kaelen, 28",
+        role: "Indiranagar • Quantum Sound Designer",
+        resonance: "95% Spark Resonance",
+        tags: ["Analog Synths", "Deep Astronomy", "Midnight Cycling"]
+      },
+      {
+        name: "Zoe, 24",
+        role: "South Bombay • Neuro-Aesthetician",
+        resonance: "92% Spark Resonance",
+        tags: ["Holographic Art", "Matcha", "Minimalist Living"]
+      }
+    ];
+    let currentIndex = 0;
 
-</body>
-</html>
+    // Accessibility Motion Toggle
+    if (motionToggleBtn) {
+      motionToggleBtn.addEventListener('click', () => {
+        motionEnabled = !motionEnabled;
+        if (!motionEnabled) {
+          motionIcon.textContent = 'motion_photos_off';
+          motionStatusText.textContent = 'Reduced Motion';
+          if (activeCard) activeCard.style.transform = 'none';
+        } else {
+          motionIcon.textContent = 'motion_photos_on';
+          motionStatusText.textContent = 'Dynamic Flow';
+        }
+      });
+    }
+
+    // 3D Tilt calculation on mouse position relative to active card
+    if (cardStage && activeCard) {
+      cardStage.addEventListener('mousemove', (e) => {
+        if (!motionEnabled) return;
+        const rect = activeCard.getBoundingClientRect();
+        const cardX = e.clientX - rect.left - rect.width / 2;
+        const cardY = e.clientY - rect.top - rect.height / 2;
+        
+        const rotateX = (-cardY / 15).toFixed(2);
+        const rotateY = (cardX / 15).toFixed(2);
+
+        activeCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+
+      cardStage.addEventListener('mouseleave', () => {
+        if (!motionEnabled) return;
+        activeCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+    }
+
+    // Card Action Triggers
+    function advanceCard(action) {
+      if (!activeCard) return;
+
+      if (action === 'spark' || action === 'super') {
+        if (sparkOverlay) sparkOverlay.style.opacity = '1';
+        activeCard.style.transform = 'perspective(1000px) translateX(120px) rotateZ(12deg) scale(0.9)';
+        activeCard.style.opacity = '0';
+        
+        setTimeout(() => {
+          if (matchModal) {
+            matchModal.classList.remove('opacity-0', 'pointer-events-none');
+            matchModal.classList.add('opacity-100', 'pointer-events-auto');
+          }
+        }, 300);
+      } else {
+        if (passOverlay) passOverlay.style.opacity = '1';
+        activeCard.style.transform = 'perspective(1000px) translateX(-120px) rotateZ(-12deg) scale(0.9)';
+        activeCard.style.opacity = '0';
+      }
+
+      setTimeout(() => {
+        // Reset card styling and cycle data
+        currentIndex = (currentIndex + 1) % daters.length;
+        const nextPerson = daters[currentIndex];
+        
+        const nameEl = document.getElementById('active-card-name');
+        const roleEl = document.getElementById('active-card-role');
+        if (nameEl) nameEl.textContent = nextPerson.name;
+        if (roleEl) roleEl.innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary">location_on</span> ${nextPerson.role}`;
+        
+        if (sparkOverlay) sparkOverlay.style.opacity = '0';
+        if (passOverlay) passOverlay.style.opacity = '0';
+        activeCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+        activeCard.style.opacity = '1';
+      }, 400);
+    }
+
+    if (btnSpark) btnSpark.addEventListener('click', () => advanceCard('spark'));
+    if (btnSuper) btnSuper.addEventListener('click', () => advanceCard('super'));
+    if (btnPass) btnPass.addEventListener('click', () => advanceCard('pass'));
+
+    if (btnCloseMatch && matchModal) {
+      btnCloseMatch.addEventListener('click', () => {
+        matchModal.classList.add('opacity-0', 'pointer-events-none');
+        matchModal.classList.remove('opacity-100', 'pointer-events-auto');
+      });
+    }
+
+  })();
+</script></main><div class="xl:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.6)] py-space-xs px-gutter-mobile"><nav class="flex items-center justify-around gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-bold"><a aria-current="page" class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg transition-all bg-surface-container-high text-primary font-bold" data-path="discover" href="#"><span class="material-symbols-outlined text-[20px]">style</span><span class="font-label-sm text-label-sm">Discover</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="matches-likes" href="#"><span class="material-symbols-outlined text-[20px]">favorite</span><span class="font-label-sm text-label-sm">Sparks</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="messages" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-sm text-label-sm">Chat</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="premium" href="#"><span class="material-symbols-outlined text-[20px]">electric_bolt</span><span class="font-label-sm text-label-sm">Pass</span></a><a class="flex flex-col items-center justify-center py-space-xs px-space-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-all" data-path="my-profile" href="#"><span class="material-symbols-outlined text-[20px]">account_circle</span><span class="font-label-sm text-label-sm">Profile</span></a></nav></div><footer class="w-full bg-surface-container-lowest py-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg text-on-surface-variant"><div class="flex items-center gap-space-md"><img alt="inLaamp Logo" class="h-6 w-auto object-contain opacity-80" src="https://lh3.googleusercontent.com/aida/AEtjO1U8zEgIpaA8DTTgiY3EbpEB4ybZofb-9EMskbnNanXvawFJhbQNv-q4m6TWp3NgaRgNBjdn9UiRAX7WbK4vMMu2GA99m5C9UFeCh_9jDEobFlcblwTXrL4AZc56WKbZhpFRk9H_3m4cAyr3twW2haN_aGVyvldBLC-kNw8Lcq1BshDUIHClljmyvzFphxd5HqsmGR5vwQnNcIAhVnGlALPDvxjayWCjiKj8qsP2-C0F81aMT-IsV6mSRXiQ"/><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 inLaamp Inc. Light up your connection.</p></div><div class="flex flex-wrap items-center justify-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="safety-center" href="#">Safety</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms</a></div><div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-md py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span>Ultra Luminescence Active</span></div></div></footer></body></html>
